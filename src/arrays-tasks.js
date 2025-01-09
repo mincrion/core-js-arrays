@@ -42,7 +42,10 @@ function sumArrays(arr1, arr2) {
     throw new Error('Both arguments must be arrays');
   }
   const maxLength = Math.max(arr1.length, arr2.length);
-  return Array.from({ length: maxLength }, (_, i) => (arr1[i] || 0) + (arr2[i] || 0));
+  return Array.from(
+    { length: maxLength },
+    (_, i) => (arr1[i] || 0) + (arr2[i] || 0)
+  );
 }
 
 /**
