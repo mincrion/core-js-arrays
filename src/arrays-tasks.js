@@ -41,8 +41,8 @@ function sumArrays(arr1, arr2) {
   const maxLength = Math.max(arr1.length, arr2.length);
   const result = [];
   for (let i = 0; i < maxLength; i += 1) {
-      const val1 = arr1[i] || 0; 
-      const val2 = arr2[i] || 0;
+    const val1 = i < arr1.length ? arr1[i] : 0;
+    const val2 = i < arr2.length ? arr2[i] : 0;
       result.push(val1 + val2);
   }
   return result;
