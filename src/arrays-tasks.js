@@ -325,7 +325,7 @@ function selectMany(arr, childrenSelector) {
  */
 function calculateBalance(arr) {
   return arr.reduce(
-    (balance, [inс, exp]) => balance + (inс - exp),
+    (balance, [income, expense]) => balance + (income - expense),
     0
   );
 }
